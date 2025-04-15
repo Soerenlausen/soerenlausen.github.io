@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "polymath-display", sans-serif;
+  line-height: 1.2;
+}
+
+body {
+  background-color: #145295;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding-top: 3vh;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "btn pic";
+}
+
+ul {
+  list-style-type: none;
+  grid-area: btn;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+}
+
+a:hover {
+  color: #f9dfa8;
+  transition: 0.7s;
+}
+
+.fp {
+  grid-area: pic;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90%;
+  padding: 30px;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 668px) {
+  h1 {
+    justify-content: start;
+    text-align: left;
+    font-size: 24px;
+  }
+  nav {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "btn" "pic";
+  }
+  h2 {
+    font-size: 48px;
+  }
+  ul {
+    padding: 0;
+  }
+  a {
+    font-size: 1.8em;
+  }
+  .fp {
+    padding: 0;
+    margin: 30px 0 100px 0;
+    max-width: 360px;
+  }
+  .contact {
+    font-size: 1.5em;
+  }
+}/*# sourceMappingURL=style.css.map */

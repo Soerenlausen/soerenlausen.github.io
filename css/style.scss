@@ -5,6 +5,11 @@
     line-height: 1.2;
 }
 
+body{
+    background-color: #145295;
+    color: white;
+}
+
 h1{
     display: flex;
     width: 100%;
@@ -42,6 +47,12 @@ a {
     font-size: 40px;
     text-decoration: none;
     transition: 0.5s;
+    color: white;
+}
+
+a:hover{
+    color: #f9dfa8;
+    transition: 0.7s;
 }
 
 .fp{
@@ -59,63 +70,6 @@ a {
     padding: 20px;
     position: fixed;
     bottom: 0;
-}
-
-@media (prefers-color-scheme: light) {
-
-    body {
-        background-color: white;
-    }
-    
-    h1
-    {color: #cc1100;}
-    
-    a, h2 {
-        color: black;
-    }
-
-    a:hover {
-        color: #fa6400;
-        transition: 0.5s;
-    }
-
-    .contact{
-        color: #003A70;
-      	background-color: white;
-    }
-
-}
-
-@media (prefers-color-scheme: dark) {
-    
-    body {
-        background-color: black;
-    }
-
-    h1
-    {color: lightgreen;}
-    
-    h2
-    {color: white;}
-
-    a {
-        color: white;
-    }
-
-    a:hover {
-        color: #32cd32;
-        transition: 0.5s;
-    }
-
-    .contact{
-        color: #fa6400;
-      	background-color: black;
-    }
-
-    .contact:hover{
-        color: #0096FF;
-    }
-
 }
 
 @media only screen and (max-width: 668px) {
